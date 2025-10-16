@@ -2,8 +2,8 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import TeacherCard from '@/components/TeacherCard';
 import { GraduationCap } from 'lucide-react';
-import anaImage from '@/assets/ana.jpg';
-import henrikImage from '@/assets/henrik.jpg';
+import anaImage from '@/assets/ana-circle.png';
+import henrikImage from '@/assets/henrik-circle.png';
 
 const Teachers = () => {
   const { t } = useTranslation();
@@ -50,9 +50,9 @@ const Teachers = () => {
       </section>
 
       {/* Teachers */}
-      <section className="py-20">
+      <section className="py-20 pt-32">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-y-28 gap-x-8 max-w-6xl mx-auto">
             {teachers.map((teacher, index) => (
               <TeacherCard key={index} {...teacher} index={index} />
             ))}

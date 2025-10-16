@@ -21,17 +21,18 @@ const TeacherCard = ({ name, role, education, experience, quote, image, index = 
       viewport={{ once: true }}
       className="h-full"
     >
-      <Card className="h-full overflow-hidden hover:shadow-xl transition-shadow duration-300">
-        <div className="relative h-64 overflow-hidden group">
-          <img
-            src={image}
-            alt={name}
-            className="w-full h-full object-cover object-top transition-all duration-500 group-hover:scale-110"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      <Card className="relative h-full overflow-visible hover:shadow-xl transition-shadow duration-300 pt-24">
+        <div className="absolute -top-20 left-1/2 -translate-x-1/2">
+          <div className="relative group">
+            <img
+              src={image}
+              alt={name}
+              className="w-40 h-40 rounded-full object-cover shadow-xl ring-4 ring-background transition-transform duration-300 group-hover:scale-105"
+            />
+          </div>
         </div>
         
-        <CardHeader>
+        <CardHeader className="text-center pt-4">
           <CardTitle className="text-2xl text-primary">{name}</CardTitle>
           <p className="text-sm text-accent font-semibold">{role}</p>
         </CardHeader>
