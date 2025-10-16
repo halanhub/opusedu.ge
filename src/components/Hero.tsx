@@ -67,7 +67,7 @@ const Hero = () => {
               </Button>
             </Link>
             <Link to="/courses">
-              <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10 text-lg px-8 py-6">
+              <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-6">
                 {t('hero.cta_secondary')}
               </Button>
             </Link>
