@@ -26,7 +26,7 @@ const TeacherCard = ({ name, role, education, experience, quote, image, index = 
           <img
             src={image}
             alt={name}
-            className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
+            className="w-full h-full object-cover object-top transition-all duration-500 group-hover:scale-110"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         </div>
