@@ -87,7 +87,7 @@ const ContactForm = () => {
             {/* Map Embed */}
             <div className="h-64 rounded-lg overflow-hidden border border-border">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2977.2939234!2d44.783!3d41.716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDQyJzU3LjYiTiA0NMKwNDYnNTguOCJF!5e0!3m2!1sen!2s!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d916.291024296995!2d44.788293649877296!3d41.705993442501644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDQyJzIxLjgiTiA0NMKwNDcnMTYuNyJF!5e1!3m2!1sen!2sge!4v1761046554150!5m2!1sen!2sge"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
