@@ -78,15 +78,15 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
-            className="flex flex-wrap gap-6 justify-center"
+            className="flex flex-wrap gap-3 sm:gap-6 justify-center"
           >
             {badges.map((badge, index) => (
               <div
                 key={index}
-                className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20"
+                className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-2 sm:px-4 rounded-full border border-white/20"
               >
-                <badge.icon className="h-5 w-5 text-golden-yellow" />
-                <span className="text-sm font-medium">{badge.label}</span>
+                <badge.icon className="h-4 w-4 sm:h-5 sm:w-5 text-golden-yellow flex-shrink-0" />
+                <span className="text-xs sm:text-sm font-medium whitespace-nowrap">{badge.label}</span>
               </div>
             ))}
           </motion.div>
