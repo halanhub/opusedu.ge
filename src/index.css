@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 197 28% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 197 28% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 197 28% 15%;
+
+    /* Primary: Deep Teal #305853 */
+    --primary: 171 28% 27%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary: Soft Mint */
+    --secondary: 161 32% 79%;
+    --secondary-foreground: 197 28% 15%;
+
+    --muted: 161 32% 79%;
+    --muted-foreground: 171 20% 45%;
+
+    /* Accent: Golden Amber #B06821 */
+    --accent: 30 68% 41%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Brick Red for destructive */
+    --destructive: 5 65% 37%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 161 32% 85%;
+    --input: 161 32% 90%;
+    --ring: 30 68% 41%;
+
+    --radius: 0.75rem;
+    
+    /* Custom brand colors */
+    --brick-red: 5 65% 37%;
+    --deep-teal: 171 28% 27%;
+    --golden-amber: 30 68% 41%;
+    --dark-mahogany: 3 54% 20%;
+    --slate-blue: 197 28% 15%;
+    --ocean-teal: 186 79% 25%;
+    --aqua-cyan: 180 78% 31%;
+    --soft-mint: 161 32% 79%;
+    --golden-yellow: 45 89% 52%;
+    
+    /* Gradients */
+    --gradient-warm: linear-gradient(135deg, hsl(30, 68%, 41%), hsl(45, 89%, 52%));
+    --gradient-teal: linear-gradient(135deg, hsl(171, 28%, 27%), hsl(186, 79%, 25%));
+    --gradient-hero: linear-gradient(135deg, hsl(171, 28%, 27%) 0%, hsl(186, 79%, 25%) 50%, hsl(180, 78%, 31%) 100%);
+    
+    /* Shadows */
+    --shadow-warm: 0 10px 30px -10px hsl(30 68% 41% / 0.3);
+    --shadow-teal: 0 10px 30px -10px hsl(171 28% 27% / 0.2);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 197 28% 15%;
+    --foreground: 0 0% 98%;
+
+    --card: 171 28% 20%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 171 28% 20%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 180 78% 31%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 171 28% 22%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 171 28% 22%;
+    --muted-foreground: 161 20% 65%;
+
+    --accent: 45 89% 52%;
+    --accent-foreground: 197 28% 15%;
+
+    --destructive: 5 65% 37%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 171 28% 25%;
+    --input: 171 28% 25%;
+    --ring: 45 89% 52%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Garet', 'BPG Nino Mtavruli', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Signika', 'BPG Nino Mtavruli', sans-serif;
+    font-weight: 700;
+  }
+  
+  [lang="ka"] {
+    font-family: 'BPG Nino Mtavruli', 'Garet', sans-serif;
+  }
+  
+  [lang="ka"] h1,
+  [lang="ka"] h2,
+  [lang="ka"] h3,
+  [lang="ka"] h4,
+  [lang="ka"] h5,
+  [lang="ka"] h6 {
+    font-family: 'BPG Nino Mtavruli', 'Signika', sans-serif;
+  }
+}
+
+@layer utilities {
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
+  }
+  
+  .text-gradient-warm {
+    @apply bg-gradient-to-r from-[hsl(30,68%,41%)] to-[hsl(45,89%,52%)] bg-clip-text text-transparent;
+  }
+  
+  .text-gradient-teal {
+    @apply bg-gradient-to-r from-[hsl(171,28%,27%)] to-[hsl(186,79%,25%)] bg-clip-text text-transparent;
+  }
+}

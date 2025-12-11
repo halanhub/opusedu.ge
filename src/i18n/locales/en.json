@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "courses": "Courses",
+    "cefr": "CEFR Levels",
+    "teachers": "Teachers",
+    "contact": "Contact",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "title": "Where leisure becomes great deeds",
+    "subtitle": "Learn English and Georgian with global standards, local warmth, and human connection",
+    "cta_primary": "Contact Us",
+    "cta_secondary": "View Courses"
+  },
+  "badges": {
+    "cefr": "CEFR-Aligned",
+    "teachers": "Native + Local Teachers",
+    "groups": "Small Groups"
+  },
+  "about": {
+    "title": "About Opus",
+    "philosophy_title": "Our Philosophy",
+    "philosophy": "At Opus • ოპუსი, we believe that learning should be both effective and enjoyable. Our name comes from the Latin words otium (leisure) and opus (work), reflecting our belief that meaningful achievement grows from a foundation of joy and curiosity. We create an educational community where students feel safe to experiment, make mistakes, and ultimately flourish.",
+    "value1_title": "Global Standards",
+    "value1": "CEFR-aligned curriculum with Oxford University Press materials",
+    "value2_title": "Human Touch",
+    "value2": "Small groups, authentic materials, and real-world projects",
+    "value3_title": "Teacher-Learners",
+    "value3": "Experienced educators who are lifelong students themselves"
+  },
+  "courses": {
+    "title": "Our Courses",
+    "english_title": "Group English for Teens",
+    "english_desc": "Using Life Vision (Oxford University Press) with dual-teacher model",
+    "english_price": "200 ₾ / month",
+    "georgian_title": "Group Georgian for Foreigners",
+    "georgian_desc": "Communicative approach with native and international teachers",
+    "georgian_price": "250 ₾ / month",
+    "features": {
+      "skills": "All four skills + mediation",
+      "projects": "Project-based learning",
+      "authentic": "Authentic materials",
+      "global": "Global skills focus"
+    },
+    "cta": "Enroll Now"
+  },
+  "cefr": {
+    "title": "Understanding CEFR Levels",
+    "intro": "The Common European Framework of Reference for Languages (CEFR) is an international standard for describing language ability, established by the Council of Europe in 2001.",
+    "levels": {
+      "A0": {
+        "name": "Beginner",
+        "desc": "Just starting; familiar expressions and basic introductions"
+      },
+      "A1": {
+        "name": "Elementary",
+        "desc": "Can understand and use familiar everyday expressions"
+      },
+      "A2": {
+        "name": "Pre-Intermediate",
+        "desc": "Can handle routine tasks and simple exchanges"
+      },
+      "B1": {
+        "name": "Intermediate",
+        "desc": "Can handle everyday situations and produce connected text on familiar topics"
+      },
+      "B2": {
+        "name": "Upper-Intermediate",
+        "desc": "Can interact independently, present viewpoints, and discuss advantages/disadvantages"
+      },
+      "C1": {
+        "name": "Advanced",
+        "desc": "Flexible, effective use; understands implicit meaning"
+      },
+      "C2": {
+        "name": "Proficient",
+        "desc": "Near-native comprehension and precise expression"
+      }
+    },
+    "skills_title": "Skills Assessed",
+    "skills": {
+      "listening": "Listening",
+      "speaking": "Speaking",
+      "reading": "Reading",
+      "writing": "Writing",
+      "mediation": "Mediation & Plurilingual Competence"
+    },
+    "parents_note": "For Parents: Clear outcomes per level ensure measurable progress"
+  },
+  "teachers": {
+    "title": "Meet Our Teachers",
+    "ana": {
+      "name": "Ana Japaridze",
+      "role": "Co-Founder, ESL Teacher",
+      "education": "Liberal Arts (AgrUni) • Linguistics (TSU, UiO) • Translation (SANGU)",
+      "experience": "ESL in Georgia, Italy, Poland • Linguistic Specialist at State Language Department",
+      "quote": "I believe that language learning is most effective when students feel safe to take risks, make mistakes, and discover their own voice."
+    },
+    "henrik": {
+      "name": "Henrik Lisether",
+      "role": "Co-Founder, ESL Teacher",
+      "education": "English Literature (HIT Telemark) • History & Geography (Franklin College IN) • Linguistics (UiO)",
+      "experience": "Teaching EN/NO to diplomats & professionals • Academic proofreading",
+      "quote": "Learning a language opens doors not just to communication, but to understanding different ways of thinking and being in the world."
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "course": "Interested in",
+      "english": "English Course",
+      "georgian": "Georgian Course",
+      "submit": "Send Message",
+      "success": "Thank you! We'll be in touch soon."
+    },
+    "info": {
+      "address": "21 Merab Kostava St, Tbilisi",
+      "phone": "+995 598 39 00 42",
+      "email": "contact@opusedu.ge"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": "What are the class sizes?",
+    "a1": "We maintain small groups of 4-8 students to ensure personalized attention and meaningful interaction.",
+    "q2": "What is the schedule?",
+    "a2": "Classes meet twice weekly. Specific times are arranged based on group availability.",
+    "q3": "How do you assess placement?",
+    "a3": "We conduct a brief speaking and writing assessment to determine the appropriate CEFR level.",
+    "q4": "What materials do I need?",
+    "a4": "We provide course materials (Life Vision textbooks for English). Students should bring a notebook and writing materials.",
+    "q5": "What are the payment options?",
+    "a5": "Monthly fees are due at the start of each month. We accept bank transfer and cash payments."
+  },
+  "footer": {
+    "tagline": "Where leisure becomes great deeds",
+    "copyright": "© 2025 Opus Educational Centre. All rights reserved."
+  }
+}
