@@ -31,7 +31,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 hover-lift">
-            <img src={opusLogo} alt="Opus Logo" className="h-10 w-10" loading="eager" />
+            <img src={opusLogo} alt="Opus Logo" className="h-10 w-10" loading="eager" width="40" height="40" />
             <span className="text-xl font-bold text-primary">
               {i18n.language === 'ka' ? 'ოპუსი' : 'OPUS'}
             </span>
