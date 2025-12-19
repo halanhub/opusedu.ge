@@ -48,7 +48,9 @@ const CEFRLevels = () => {
                 transition={{ duration: 0.3, delay: index * 0.1 }}
                 viewport={{ once: true }}
                 onClick={() => setActiveLevel(activeLevel === level ? null : level)}
-                className={`flex-1 py-6 px-4 rounded-lg font-bold text-white transition-all cursor-pointer ${
+                aria-label={`${level} - ${t(`cefr.levels.${level}.name`)}. Click to ${activeLevel === level ? 'close' : 'view'} details`}
+                aria-expanded={activeLevel === level}
+                className={`flex-1 py-6 px-4 rounded-lg font-bold text-white transition-all cursor-pointer min-h-[44px] ${
                   activeLevel === level ? 'scale-105 shadow-lg' : 'hover:scale-102'
                 } bg-gradient-to-br ${levelColors[level as keyof typeof levelColors]}`}
               >
@@ -101,7 +103,7 @@ const CEFRLevels = () => {
                   </div>
                 ))}
               </div>
-              <p className="mt-6 text-sm text-white/80 text-center">
+              <p className="mt-6 text-sm text-white/95 text-center">
                 {t('cefr.parents_note')}
               </p>
             </CardContent>

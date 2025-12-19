@@ -4,6 +4,7 @@ import CourseCard from '@/components/CourseCard';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { BookOpen } from 'lucide-react';
+import SEO from '@/components/SEO';
 
 const Courses = () => {
   const { t } = useTranslation();
@@ -43,6 +44,12 @@ const Courses = () => {
 
   return (
     <div className="pt-20">
+      <SEO
+        title="English & Georgian Language Lessons & Courses in Tbilisi | Opus"
+        description="Explore our English and Georgian lessons in Tbilisi. CEFR-aligned courses with native teachers, small groups, and Oxford University Press materials. Group English lessons for teens and Georgian lessons for foreigners."
+        keywords="English lessons Tbilisi, Georgian lessons Tbilisi, English courses Tbilisi, Georgian courses Tbilisi, language lessons Tbilisi, CEFR courses Tbilisi"
+        canonical="https://opusedu.ge/courses"
+      />
       {/* Hero */}
       <section className="py-20 bg-primary text-white">
         <div className="container mx-auto px-4">
@@ -56,8 +63,8 @@ const Courses = () => {
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               {t('courses.title')}
             </h1>
-            <p className="text-xl text-white/90">
-              CEFR-aligned courses with global standards and local warmth
+            <p className="text-xl text-white">
+              English and Georgian lessons in Tbilisi - CEFR-aligned courses with global standards and local warmth
             </p>
           </motion.div>
         </div>
@@ -82,8 +89,8 @@ const Courses = () => {
             <p className="text-lg text-muted-foreground mb-6">
               Want to learn more about our CEFR-aligned approach?
             </p>
-            <Link to="/cefr">
-              <Button size="lg" variant="outline" className="border-2 border-accent hover:bg-accent hover:text-white">
+            <Link to="/cefr" aria-label="Learn more about CEFR levels and language proficiency">
+              <Button size="lg" variant="outline" className="border-2 border-accent hover:bg-accent hover:text-white min-h-[44px]">
                 Explore CEFR Levels
               </Button>
             </Link>

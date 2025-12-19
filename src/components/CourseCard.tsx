@@ -40,8 +40,8 @@ const CourseCard = ({ title, description, price, features, cta, index = 0 }: Cou
           </ul>
         </CardContent>
         <CardFooter>
-          <Link to="/contact" className="w-full">
-            <Button className="w-full bg-accent hover:bg-accent/90" size="lg">
+          <Link to="/contact" className="w-full" aria-label={`Enroll in ${title} - ${cta}`}>
+            <Button className="w-full bg-accent hover:bg-accent/90 min-h-[44px]" size="lg">
               {cta}
             </Button>
           </Link>

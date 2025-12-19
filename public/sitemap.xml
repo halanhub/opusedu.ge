@@ -5,7 +5,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://opusedu.ge/</loc>
-    <lastmod>2025-01-08</lastmod>
+    <lastmod>2025-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://opusedu.ge/" />
@@ -15,7 +15,7 @@
   <!-- About Page -->
   <url>
     <loc>https://opusedu.ge/about</loc>
-    <lastmod>2025-01-08</lastmod>
+    <lastmod>2025-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://opusedu.ge/about" />
@@ -25,7 +25,7 @@
   <!-- Courses Page -->
   <url>
     <loc>https://opusedu.ge/courses</loc>
-    <lastmod>2025-01-08</lastmod>
+    <lastmod>2025-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://opusedu.ge/courses" />
@@ -35,7 +35,7 @@
   <!-- CEFR Levels Page -->
   <url>
     <loc>https://opusedu.ge/cefr</loc>
-    <lastmod>2025-01-08</lastmod>
+    <lastmod>2025-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://opusedu.ge/cefr" />
@@ -45,7 +45,7 @@
   <!-- Teachers Page -->
   <url>
     <loc>https://opusedu.ge/teachers</loc>
-    <lastmod>2025-01-08</lastmod>
+    <lastmod>2025-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://opusedu.ge/teachers" />
@@ -55,7 +55,7 @@
   <!-- Contact Page -->
   <url>
     <loc>https://opusedu.ge/contact</loc>
-    <lastmod>2025-01-08</lastmod>
+    <lastmod>2025-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://opusedu.ge/contact" />
@@ -65,7 +65,7 @@
   <!-- FAQ Page -->
   <url>
     <loc>https://opusedu.ge/faq</loc>
-    <lastmod>2025-01-08</lastmod>
+    <lastmod>2025-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://opusedu.ge/faq" />
