@@ -1,3 +1,4 @@
+import { lazy, Suspense } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -6,14 +7,17 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './i18n/config';
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Courses from "./pages/Courses";
-import CEFR from "./pages/CEFR";
-import Teachers from "./pages/Teachers";
-import Contact from "./pages/Contact";
-import FAQPage from "./pages/FAQPage";
-import NotFound from "./pages/NotFound";
+import LoadingSpinner from "./components/LoadingSpinner";
+
+// Lazy load routes for code splitting
+const Home = lazy(() => import("./pages/Home"));
+const About = lazy(() => import("./pages/About"));
+const Courses = lazy(() => import("./pages/Courses"));
+const CEFR = lazy(() => import("./pages/CEFR"));
+const Teachers = lazy(() => import("./pages/Teachers"));
+const Contact = lazy(() => import("./pages/Contact"));
+const FAQPage = lazy(() => import("./pages/FAQPage"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
 
@@ -25,17 +29,19 @@ const App = () => (
       <BrowserRouter>
         <Navigation />
         <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/courses" element={<Courses />} />
-            <Route path="/cefr" element={<CEFR />} />
-            <Route path="/teachers" element={<Teachers />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/faq" element={<FAQPage />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
+          <Suspense fallback={<LoadingSpinner />}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/courses" element={<Courses />} />
+              <Route path="/cefr" element={<CEFR />} />
+              <Route path="/teachers" element={<Teachers />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/faq" element={<FAQPage />} />
+              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Suspense>
         </main>
         <Footer />
       </BrowserRouter>

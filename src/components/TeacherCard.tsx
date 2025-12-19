@@ -29,6 +29,8 @@ const TeacherCard = ({ name, role, education, experience, quote, image, index = 
               alt={name}
               loading="lazy"
               decoding="async"
+              width="160"
+              height="160"
               className="w-40 h-40 rounded-full object-cover shadow-xl ring-4 ring-background transition-transform duration-300 group-hover:scale-105"
             />
           </div>
