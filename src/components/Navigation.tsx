@@ -31,7 +31,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 hover-lift">
-            <img src={opusLogo} alt="Opus Logo" className="h-10 w-10" />
+            <img src={opusLogo} alt="Opus Logo" className="h-10 w-10" loading="eager" />
             <span className="text-xl font-bold text-primary">
               {i18n.language === 'ka' ? 'ოპუსი' : 'OPUS'}
             </span>
@@ -54,9 +54,10 @@ const Navigation = () => {
               variant="outline"
               size="sm"
               onClick={toggleLanguage}
-              className="gap-2"
+              className="gap-2 min-w-[44px] min-h-[44px]"
+              aria-label={`Switch to ${i18n.language === 'ka' ? 'English' : 'Georgian'} language`}
             >
-              <Globe className="h-4 w-4" />
+              <Globe className="h-4 w-4" aria-hidden="true" />
               {i18n.language === 'ka' ? 'EN' : 'KA'}
             </Button>
           </div>
@@ -64,7 +65,9 @@ const Navigation = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 text-foreground hover:text-accent transition-colors"
+            className="md:hidden p-2 text-foreground hover:text-accent transition-colors min-w-[44px] min-h-[44px]"
+            aria-label={isOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={isOpen}
           >
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -90,9 +93,10 @@ const Navigation = () => {
                 toggleLanguage();
                 setIsOpen(false);
               }}
-              className="gap-2 w-full"
+              className="gap-2 w-full min-h-[44px]"
+              aria-label={`Switch to ${i18n.language === 'ka' ? 'English' : 'Georgian'} language`}
             >
-              <Globe className="h-4 w-4" />
+              <Globe className="h-4 w-4" aria-hidden="true" />
               {i18n.language === 'ka' ? 'EN' : 'KA'}
             </Button>
           </div>

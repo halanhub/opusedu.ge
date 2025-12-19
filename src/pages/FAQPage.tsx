@@ -18,7 +18,7 @@ const FAQPage = () => {
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               Frequently Asked Questions
             </h1>
-            <p className="text-xl text-white/90">
+            <p className="text-xl text-white">
               Find answers to common questions about our courses
             </p>
           </motion.div>

@@ -10,7 +10,7 @@
   },
   "hero": {
     "title": "Where leisure becomes great deeds",
-    "subtitle": "Learn English and Georgian with global standards, local warmth, and human connection",
+    "subtitle": "English and Georgian lessons in Tbilisi with global standards, local warmth, and human connection",
     "cta_primary": "Contact Us",
     "cta_secondary": "View Courses"
   },
@@ -31,12 +31,12 @@
     "value3": "Experienced educators who are lifelong students themselves"
   },
   "courses": {
-    "title": "Our Courses",
-    "english_title": "Group English for Teens",
-    "english_desc": "Using Life Vision (Oxford University Press) with dual-teacher model",
+    "title": "Our Courses & Lessons",
+    "english_title": "Group English Lessons for Teens",
+    "english_desc": "English lessons in Tbilisi using Life Vision (Oxford University Press) with dual-teacher model",
     "english_price": "200 ₾ / month",
-    "georgian_title": "Group Georgian for Foreigners",
-    "georgian_desc": "Communicative approach with native and international teachers",
+    "georgian_title": "Group Georgian Lessons for Foreigners",
+    "georgian_desc": "Georgian lessons in Tbilisi with communicative approach and native and international teachers",
     "georgian_price": "250 ₾ / month",
     "features": {
       "skills": "All four skills + mediation",

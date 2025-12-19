@@ -22,6 +22,8 @@ const Hero = () => {
         style={{ 
           backgroundImage: `url(${classroomBg})`,
         }}
+        role="img"
+        aria-label="Classroom with students learning"
       >
         <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/90 to-ocean-teal/95" />
       </div>
@@ -49,7 +51,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-xl md:text-2xl mb-10 text-white/90"
+            className="text-xl md:text-2xl mb-10 text-white"
           >
             {t('hero.subtitle')}
           </motion.p>
@@ -61,13 +63,13 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="flex flex-col sm:flex-row gap-4 justify-center mb-16"
           >
-            <Link to="/contact">
-              <Button size="lg" variant="default" className="bg-accent hover:bg-accent/90 text-white text-lg px-8 py-6">
+            <Link to="/contact" aria-label="Contact us to learn more about our English and Georgian lessons">
+              <Button size="lg" variant="default" className="bg-accent hover:bg-accent/90 text-white text-lg px-8 py-6 min-h-[44px]">
                 {t('hero.cta_primary')}
               </Button>
             </Link>
-            <Link to="/courses">
-              <Button size="lg" variant="outline" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-6">
+            <Link to="/courses" aria-label="View all our English and Georgian courses and lessons">
+              <Button size="lg" variant="outline" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-6 min-h-[44px]">
                 {t('hero.cta_secondary')}
               </Button>
             </Link>

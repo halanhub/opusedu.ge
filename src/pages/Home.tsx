@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import CourseCard from '@/components/CourseCard';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import SEO from '@/components/SEO';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -37,6 +38,12 @@ const Home = () => {
 
   return (
     <>
+      <SEO
+        title="English & Georgian Lessons in Tbilisi | Opus • ოპუსი | Language School"
+        description="English and Georgian lessons in Tbilisi with CEFR-aligned courses, native teachers, and small groups. Oxford University Press materials. Group English lessons for teens (200₾/month) and Georgian lessons for foreigners (250₾/month). Located at 21 Merab Kostava St, Tbilisi."
+        keywords="English lessons Tbilisi, Georgian lessons Tbilisi, English and Georgian lessons in Tbilisi, English learning Tbilisi, Georgian language course Tbilisi, CEFR English course, English school Tbilisi"
+        canonical="https://opusedu.ge/"
+      />
       <Hero />
       
       {/* Course Preview */}
@@ -61,8 +68,8 @@ const Home = () => {
           </div>
 
           <div className="text-center">
-            <Link to="/courses">
-              <Button size="lg" variant="outline" className="border-2 border-primary hover:bg-primary hover:text-white">
+            <Link to="/courses" aria-label="View all English and Georgian courses and lessons">
+              <Button size="lg" variant="outline" className="border-2 border-primary hover:bg-primary hover:text-white min-h-[44px]">
                 View All Courses
               </Button>
             </Link>
