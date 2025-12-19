@@ -129,11 +129,13 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
     font-family: 'Garet', 'BPG Nino Mtavruli', sans-serif;
+    font-display: swap;
   }
   
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Signika', 'BPG Nino Mtavruli', sans-serif;
     font-weight: 700;
+    font-display: swap;
   }
   
   [lang="ka"] {

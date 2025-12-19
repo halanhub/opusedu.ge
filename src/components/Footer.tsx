@@ -13,7 +13,7 @@ const Footer = () => {
           {/* Logo & Tagline */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <img src={opusLogo} alt="Opus Logo" className="h-12 w-12" loading="lazy" />
+              <img src={opusLogo} alt="Opus Logo" className="h-12 w-12" loading="lazy" width="48" height="48" />
               <span className="text-2xl font-bold">
                 {i18n.language === 'ka' ? 'ოპუსი' : 'OPUS'}
               </span>
