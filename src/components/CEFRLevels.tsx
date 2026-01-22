@@ -2,17 +2,23 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion';
 
 const CEFRLevels = () => {
   const { t } = useTranslation();
   const [activeLevel, setActiveLevel] = useState<string | null>(null);
 
-  const levels = ['A0', 'A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+  const levels = ['A1', 'A2', 'A2+', 'B1', 'B2', 'C1', 'C2'];
   
   const levelColors = {
-    A0: 'from-[hsl(5,65%,37%)] to-[hsl(30,68%,41%)]',
     A1: 'from-[hsl(30,68%,41%)] to-[hsl(45,89%,52%)]',
-    A2: 'from-[hsl(45,89%,52%)] to-[hsl(161,32%,79%)]',
+    A2: 'from-[hsl(45,89%,52%)] to-[hsl(55,85%,60%)]',
+    'A2+': 'from-[hsl(55,85%,60%)] to-[hsl(161,32%,79%)]',
     B1: 'from-[hsl(161,32%,79%)] to-[hsl(180,78%,31%)]',
     B2: 'from-[hsl(180,78%,31%)] to-[hsl(186,79%,25%)]',
     C1: 'from-[hsl(186,79%,25%)] to-[hsl(171,28%,27%)]',
@@ -20,7 +26,7 @@ const CEFRLevels = () => {
   };
 
   return (
-    <section className="py-20 bg-muted/30">
+    <section className="py-20" style={{ backgroundColor: '#E0EEEB' }}>
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -29,12 +35,36 @@ const CEFRLevels = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            {t('cefr.title')}
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            {t('cefr.intro')}
-          </p>
+          
+          {/* CEFR Information Accordion */}
+          <div className="max-w-4xl mx-auto mb-12 text-left">
+            <Card className="border-2 border-accent bg-white">
+              <CardContent className="p-0">
+                <Accordion type="single" collapsible className="w-full">
+                  <AccordionItem value="what-is-cefr" className="border-b border-accent px-6">
+                    <AccordionTrigger className="text-2xl text-primary hover:no-underline py-6">
+                      {t('cefr.what_is_cefr')}
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <p className="text-lg text-muted-foreground leading-relaxed whitespace-pre-line pb-4">
+                        {t('cefr.what_is_cefr_content')}
+                      </p>
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="how-does-cefr-work" className="border-b-0 px-6">
+                    <AccordionTrigger className="text-2xl text-primary hover:no-underline py-6">
+                      {t('cefr.how_does_cefr_work')}
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <p className="text-lg text-muted-foreground leading-relaxed whitespace-pre-line pb-4">
+                        {t('cefr.how_does_cefr_work_content')}
+                      </p>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+              </CardContent>
+            </Card>
+          </div>
         </motion.div>
 
         {/* Interactive Level Bar */}

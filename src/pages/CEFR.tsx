@@ -1,12 +1,15 @@
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import CEFRLevels from '@/components/CEFRLevels';
 import { Award } from 'lucide-react';
 
 const CEFR = () => {
+  const { t } = useTranslation();
+  
   return (
     <div className="pt-20">
       {/* Hero */}
-      <section className="py-20 bg-gradient-to-br from-primary via-ocean-teal to-aqua-cyan text-white">
+      <section className="py-20 bg-primary text-white">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -16,11 +19,8 @@ const CEFR = () => {
           >
             <Award className="h-20 w-20 mx-auto mb-6 text-golden-yellow" />
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Understanding CEFR
+              {t('cefr.title')}
             </h1>
-            <p className="text-xl text-white">
-              The global standard for language proficiency assessment
-            </p>
           </motion.div>
         </div>
       </section>

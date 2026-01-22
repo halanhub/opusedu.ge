@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Globe, Heart, Users } from 'lucide-react';
-import classroomBg from '@/assets/classroom-2.jpg';
+import aboutPageImg from '@/assets/about-image.jpg';
 
 const About = () => {
   const { t } = useTranslation();
@@ -30,8 +30,11 @@ const About = () => {
       {/* Hero Section */}
       <section className="relative py-32 overflow-hidden">
         <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${classroomBg})` }}
+          className="absolute inset-0 bg-cover bg-no-repeat"
+          style={{ 
+            backgroundImage: `url(${aboutPageImg})`,
+            backgroundPosition: 'center 30%'
+          }}
         >
           <div className="absolute inset-0 bg-primary/90" />
         </div>
@@ -67,7 +70,7 @@ const About = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-lg text-muted-foreground text-center leading-relaxed">
+                <p className="text-lg text-muted-foreground text-center leading-relaxed whitespace-pre-line">
                   {t('about.philosophy')}
                 </p>
               </CardContent>

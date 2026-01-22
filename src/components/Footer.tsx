@@ -28,8 +28,11 @@ const Footer = () => {
               <Link to="/about" className="block text-white/95 hover:text-accent transition-colors">
                 {t('nav.about')}
               </Link>
-              <Link to="/courses" className="block text-white/95 hover:text-accent transition-colors">
-                {t('nav.courses')}
+              <Link to="/courses/english" className="block text-white/95 hover:text-accent transition-colors">
+                {t('courses.nav.english')}
+              </Link>
+              <Link to="/courses/georgian" className="block text-white/95 hover:text-accent transition-colors">
+                {t('courses.nav.georgian')}
               </Link>
               <Link to="/teachers" className="block text-white/95 hover:text-accent transition-colors">
                 {t('nav.teachers')}
