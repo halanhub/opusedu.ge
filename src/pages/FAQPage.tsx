@@ -1,8 +1,11 @@
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import FAQ from '@/components/FAQ';
 import { HelpCircle } from 'lucide-react';
 
 const FAQPage = () => {
+  const { t } = useTranslation();
+  
   return (
     <div className="pt-20">
       {/* Hero */}
@@ -16,11 +19,8 @@ const FAQPage = () => {
           >
             <HelpCircle className="h-20 w-20 mx-auto mb-6 text-golden-yellow" />
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Frequently Asked Questions
+              {t('faq.title')}
             </h1>
-            <p className="text-xl text-white">
-              Find answers to common questions about our courses
-            </p>
           </motion.div>
         </div>
       </section>

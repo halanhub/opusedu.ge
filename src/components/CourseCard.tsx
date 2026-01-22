@@ -23,12 +23,12 @@ const CourseCard = ({ title, description, price, features, cta, index = 0 }: Cou
       whileHover={{ y: -8 }}
       className="h-full"
     >
-      <Card className="h-full border-2 hover:border-accent transition-all duration-300 hover:shadow-lg">
+      <Card className="h-full border-2 hover:border-accent transition-all duration-300 hover:shadow-lg flex flex-col">
         <CardHeader>
           <CardTitle className="text-2xl text-primary">{title}</CardTitle>
           <CardDescription className="text-base">{description}</CardDescription>
         </CardHeader>
-        <CardContent className="space-y-4">
+        <CardContent className="space-y-4 flex-1">
           <div className="text-4xl font-bold text-accent">{price}</div>
           <ul className="space-y-3">
             {features.map((feature, idx) => (
@@ -39,7 +39,7 @@ const CourseCard = ({ title, description, price, features, cta, index = 0 }: Cou
             ))}
           </ul>
         </CardContent>
-        <CardFooter>
+        <CardFooter className="mt-auto">
           <Link to="/contact" className="w-full" aria-label={`Enroll in ${title} - ${cta}`}>
             <Button className="w-full bg-accent hover:bg-accent/90 min-h-[44px]" size="lg">
               {cta}

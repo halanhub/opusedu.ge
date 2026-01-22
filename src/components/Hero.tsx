@@ -1,12 +1,14 @@
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { CheckCircle2 } from 'lucide-react';
+import { CheckCircle2, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import classroomBg from '@/assets/classroom-1.jpg';
 
 const Hero = () => {
   const { t } = useTranslation();
+  const [isCoursesDropdownOpen, setIsCoursesDropdownOpen] = useState(false);
 
   const badges = [
     { icon: CheckCircle2, label: t('badges.cefr') },
@@ -68,11 +70,45 @@ const Hero = () => {
                 {t('hero.cta_primary')}
               </Button>
             </Link>
-            <Link to="/courses" aria-label="View all our English and Georgian courses and lessons">
-              <Button size="lg" variant="outline" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-6 min-h-[44px]">
+            <div 
+              className="relative inline-block"
+              onMouseEnter={() => setIsCoursesDropdownOpen(true)}
+              onMouseLeave={() => setIsCoursesDropdownOpen(false)}
+            >
+              <button
+                type="button"
+                onClick={() => setIsCoursesDropdownOpen(!isCoursesDropdownOpen)}
+                className="inline-flex items-center justify-center gap-2 h-11 px-8 text-sm font-medium bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary transition-colors rounded-md"
+                aria-label="View all our English and Georgian courses and lessons"
+              >
                 {t('hero.cta_secondary')}
-              </Button>
-            </Link>
+                <ChevronDown className="h-4 w-4" />
+              </button>
+              {isCoursesDropdownOpen && (
+                <div 
+                  className="absolute top-full left-1/2 transform -translate-x-1/2 pt-2 z-50"
+                  onMouseEnter={() => setIsCoursesDropdownOpen(true)}
+                  onMouseLeave={() => setIsCoursesDropdownOpen(false)}
+                >
+                  <div className="rounded-md border bg-popover p-1 text-popover-foreground shadow-lg w-48">
+                    <Link
+                      to="/courses/english"
+                      className="block px-2 py-1.5 text-sm rounded-sm hover:bg-accent hover:text-accent-foreground transition-colors"
+                      onClick={() => setIsCoursesDropdownOpen(false)}
+                    >
+                      {t('courses.nav.english')}
+                    </Link>
+                    <Link
+                      to="/courses/georgian"
+                      className="block px-2 py-1.5 text-sm rounded-sm hover:bg-accent hover:text-accent-foreground transition-colors"
+                      onClick={() => setIsCoursesDropdownOpen(false)}
+                    >
+                      {t('courses.nav.georgian')}
+                    </Link>
+                  </div>
+                </div>
+              )}
+            </div>
           </motion.div>
 
           {/* Badges */}

@@ -13,6 +13,8 @@ import LoadingSpinner from "./components/LoadingSpinner";
 const Home = lazy(() => import("./pages/Home"));
 const About = lazy(() => import("./pages/About"));
 const Courses = lazy(() => import("./pages/Courses"));
+const EnglishCourses = lazy(() => import("./pages/EnglishCourses"));
+const GeorgianCourses = lazy(() => import("./pages/GeorgianCourses"));
 const CEFR = lazy(() => import("./pages/CEFR"));
 const Teachers = lazy(() => import("./pages/Teachers"));
 const Contact = lazy(() => import("./pages/Contact"));
@@ -34,6 +36,8 @@ const App = () => (
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/courses" element={<Courses />} />
+              <Route path="/courses/english" element={<EnglishCourses />} />
+              <Route path="/courses/georgian" element={<GeorgianCourses />} />
               <Route path="/cefr" element={<CEFR />} />
               <Route path="/teachers" element={<Teachers />} />
               <Route path="/contact" element={<Contact />} />

@@ -22,7 +22,7 @@
   "about": {
     "title": "About Opus",
     "philosophy_title": "Our Philosophy",
-    "philosophy": "At Opus • ოპუსი, we believe that learning should be both effective and enjoyable. Our name comes from the Latin words otium (leisure) and opus (work), reflecting our belief that meaningful achievement grows from a foundation of joy and curiosity. We create an educational community where students feel safe to experiment, make mistakes, and ultimately flourish.",
+    "philosophy": "Opus was created out of many years of experience in foreign language education and a commitment to international standards. While measurable results matter to us, our core belief is that truly effective learning happens when students also enjoy the process of learning itself.\n\nOur teachers are all trained linguists with strong academic backgrounds. Their research and professional interests focus on different aspects of foreign language learning, and alongside their teaching, they continuously study new languages themselves. By remaining learners in their own right, they stay closely connected to the challenges students face and are able to make the learning experience clearer, more supportive, and more approachable.\n\nThe name and philosophy of Opus are inspired by Aristotle. In his writings, he emphasizes that philosophy and great achievements grow out of leisure and free time - moments free from pressure, where thinking and creativity can unfold. The Latin word opus means both a work and an achievement, something in progress as well as something completed. In this spirit, each course at Opus is seen as its own \"opus\" - whether it is English or Georgian - a meaningful undertaking that, through curiosity and enjoyment, becomes a shared achievement. At Opus, learning is not treated as a struggle or a race to the top. The process itself is valued as a time of exploration and enjoyment, and its results emerge naturally through consistent, thoughtful work.",
     "value1_title": "Global Standards",
     "value1": "CEFR-aligned curriculum with Oxford University Press materials",
     "value2_title": "Human Touch",
@@ -44,38 +44,122 @@
       "authentic": "Authentic materials",
       "global": "Global skills focus"
     },
-    "cta": "Enroll Now"
+    "cta": "Enroll Now",
+    "nav": {
+      "english": "English Lessons",
+      "georgian": "Georgian Lessons"
+    },
+    "english_page": {
+      "title": "English Opus",
+      "content": "Our approach to learning is highly structured, ensuring that the learning journey is clear and easy for students to follow. We use the latest Oxford textbooks, which allow students to know exactly which language skill they will be working on in each lesson. These up-to-date materials also support learning the language in a modern and relevant way.\n\nFor adult learners, levels A1, A2, and A2+ are taught exclusively by a Georgian teacher to ensure that the foundational structure of the language is developed in a clear and comfortable way. At levels B1, B1+, B2, and C1, Georgian and foreign teachers work together: the Georgian teacher supports students with grammar, reading comprehension, writing skills, and vocabulary development, while the foreign teacher focuses on speaking in English and listening comprehension.\n\nFor children and teenagers, Georgian and foreign teachers teach together at all levels.",
+      "offerings": [
+        {
+          "title": "Group Classes for Teenagers (Ages 11-18)",
+          "description": "Structured group lessons using Life Vision (Oxford University Press).",
+          "price": "200 GEL / 12 classes",
+          "features": [
+            "3 classes per week: 2 with a Georgian teacher and 1 with a foreign teacher",
+            "Lesson duration: 1.5 hours",
+            "Textbook: Life Vision (Oxford University Press)",
+            "Maximum group size: 9 students",
+            "Course duration: 4 or 8 months (depending on level)"
+          ]
+        },
+        {
+          "title": "English for Adults - Classes in Pairs",
+          "description": "Learn in pairs with a teacher setup based on your level.",
+          "price": "250 GEL / 8 classes (per person)",
+          "features": [
+            "2 classes per week",
+            "Lesson duration: 1 hour",
+            "Teacher: Georgian teacher or Georgian + foreign teacher (depending on level)"
+          ]
+        },
+        {
+          "title": "English for Adults - Group Classes",
+          "description": "Small-group learning with a teacher setup based on your level.",
+          "price": "220 GEL / 8 classes",
+          "features": [
+            "2 classes per week",
+            "Maximum group size: 6 students",
+            "Lesson duration: 1.5 hours",
+            "Teacher: Georgian teacher or Georgian + foreign teacher (depending on level)"
+          ]
+        }
+      ]
+    },
+    "georgian_page": {
+      "title": "Georgian Opus",
+      "content": "At Opus, Georgian is taught as a foreign language in accordance with the CEFR framework, ensuring clearly defined levels and practical learning outcomes. Courses are delivered by linguists who lecture Georgian as a Foreign Language at university level and use a government-issued, officially recognized textbook.\n\nWe offer group classes, classes in pairs, and individual lessons, all designed to combine strong academic foundations with a human approach and an enjoyable learning experience.",
+      "offerings": [
+        {
+          "title": "Group Classes",
+          "description": "Structured group lessons following CEFR standards with university-level linguists.",
+          "price": "250 GEL / 8 classes",
+          "features": [
+            "16 week program",
+            "2 classes per week",
+            "Maximum of 6 students per group",
+            "Lesson duration: 1.5 hours"
+          ]
+        },
+        {
+          "title": "Classes in Pairs",
+          "description": "Learn in pairs with personalized attention and flexible scheduling.",
+          "price": "320 GEL / 8 classes (per person)",
+          "features": [
+            "2 classes per week",
+            "Lesson duration: 1 hour",
+            "Duration of the program depends on the individual needs of students, however it will not exceed 16 weeks"
+          ]
+        },
+        {
+          "title": "Individual Classes",
+          "description": "One-on-one lessons tailored to your specific needs and goals.",
+          "price": "380 GEL / 8 classes",
+          "features": [
+            "2 classes per week",
+            "Lesson duration: 1 hour",
+            "Duration of the program depends on the individual needs of students, however it will not exceed 16 weeks"
+          ]
+        }
+      ]
+    }
   },
   "cefr": {
     "title": "Understanding CEFR Levels",
+    "what_is_cefr": "What is CEFR?",
+    "what_is_cefr_content": "When searching for a suitable educational centre, you will often come across the rather vague phrase \"modern teaching methods.\" In most cases, this refers to the Common European Framework of Reference for Languages (CEFR).\n\nCEFR was developed and published by the Council of Europe in 2001 to replace the many inconsistent and often unclear language teaching systems that existed before. It provides a single, internationally recognized standard for describing language proficiency across all languages - from beginner level (A1) to full proficiency (C2). Within this framework, each level clearly defines what a learner should be able to do in a foreign language upon completion.",
+    "how_does_cefr_work": "How Does CEFR Work?",
+    "how_does_cefr_work_content": "CEFR is based on descriptive indicators (descriptors) that show what a learner should be able to do in a foreign language at the completion of each level. These descriptors cover all core language skills - listening, speaking, reading, and writing - as well as more recent areas such as mediation (helping others understand texts or ideas) and plurilingual competence (using different languages together).\n\nRather than focusing on memorizing grammar rules or copying words from dictionaries, CEFR emphasizes practical ability - how effectively a learner can use the language in real, everyday situations. By clearly separating proficiency levels, CEFR also helps move away from the outdated idea that a language is something you either \"know\" or \"don't know.\"",
     "intro": "The Common European Framework of Reference for Languages (CEFR) is an international standard for describing language ability, established by the Council of Europe in 2001.",
     "levels": {
-      "A0": {
-        "name": "Beginner",
-        "desc": "Just starting; familiar expressions and basic introductions"
-      },
       "A1": {
-        "name": "Elementary",
+        "name": "Beginner level",
         "desc": "Can understand and use familiar everyday expressions"
       },
       "A2": {
-        "name": "Pre-Intermediate",
+        "name": "Elementary level",
         "desc": "Can handle routine tasks and simple exchanges"
       },
+      "A2+": {
+        "name": "Pre-intermediate",
+        "desc": "Can handle routine tasks and simple exchanges with more confidence"
+      },
       "B1": {
-        "name": "Intermediate",
+        "name": "Intermediate level",
         "desc": "Can handle everyday situations and produce connected text on familiar topics"
       },
       "B2": {
-        "name": "Upper-Intermediate",
+        "name": "Upper-intermediate level",
         "desc": "Can interact independently, present viewpoints, and discuss advantages/disadvantages"
       },
       "C1": {
-        "name": "Advanced",
+        "name": "Advanced level",
         "desc": "Flexible, effective use; understands implicit meaning"
       },
       "C2": {
-        "name": "Proficient",
+        "name": "Proficient level",
         "desc": "Near-native comprehension and precise expression"
       }
     },
@@ -99,8 +183,8 @@
       "quote": "I believe that language learning is most effective when students feel safe to take risks, make mistakes, and discover their own voice."
     },
     "henrik": {
-      "name": "Henrik Lisether",
-      "role": "Co-Founder, ESL Teacher",
+      "name": "Henrik Listether",
+      "role": "Guest, ESL Teacher",
       "education": "English Literature (HIT Telemark) • History & Geography (Franklin College IN) • Linguistics (UiO)",
       "experience": "Teaching EN/NO to diplomats & professionals • Academic proofreading",
       "quote": "Learning a language opens doors not just to communication, but to understanding different ways of thinking and being in the world."
@@ -123,20 +207,92 @@
       "address": "21 Merab Kostava St, Tbilisi",
       "phone": "+995 598 39 00 42",
       "email": "contact@opusedu.ge"
+    },
+    "location": {
+      "question": "Where is Opus located?",
+      "answer": "Opus is located Merab Kostavas Street, 21 in a central area of Tbilisi in front of Stamba Hotel, in a convenient and easily accessible neighborhood within 2 minute walk from Rustaveli metro station."
     }
   },
   "faq": {
     "title": "Frequently Asked Questions",
-    "q1": "What are the class sizes?",
-    "a1": "We maintain small groups of 4-8 students to ensure personalized attention and meaningful interaction.",
-    "q2": "What is the schedule?",
-    "a2": "Classes meet twice weekly. Specific times are arranged based on group availability.",
-    "q3": "How do you assess placement?",
-    "a3": "We conduct a brief speaking and writing assessment to determine the appropriate CEFR level.",
-    "q4": "What materials do I need?",
-    "a4": "We provide course materials (Life Vision textbooks for English). Students should bring a notebook and writing materials.",
-    "q5": "What are the payment options?",
-    "a5": "Monthly fees are due at the start of each month. We accept bank transfer and cash payments."
+    "categories": {
+      "about_opus": {
+        "title": "About Opus",
+        "questions": [
+          {
+            "q": "What makes Opus different from other educational centres?",
+            "a": "Opus was created by linguists and educators, not sales managers. Our courses are academically grounded, thoughtfully paced, and designed by teachers who actively research and reflect on how languages are learned. We focus not only on what students learn, but how they experience learning."
+          },
+          {
+            "q": "What is Opus's teaching philosophy?",
+            "a": "We believe that effective learning happens when students understand why language works the way it does. Our approach combines clear structure, communicative practice, and linguistic awareness, while maintaining a supportive and motivating classroom environment. Learning should feel challenging, engaging, and achievable - not stressful or mechanical."
+          },
+          {
+            "q": "Do your teachers have academic qualifications?",
+            "a": "Yes. All Opus teachers hold academic degrees in linguistics, philology, or related fields. Many are also involved in academic research or university teaching. This ensures that our courses are not only practical, but also scientifically informed and pedagogically sound."
+          }
+        ]
+      },
+      "courses": {
+        "title": "Courses & Languages",
+        "questions": [
+          {
+            "q": "Which languages do you teach?",
+            "a": "Currently, Opus offers English and Georgian as a second language. Our English courses focus on communicative competence and global skills, while Georgian courses are designed specifically for non-native speakers and follow a structured linguistic approach. We plan to introduce additional languages and courses in the future as Opus continues to grow."
+          },
+          {
+            "q": "What age groups do you work with?",
+            "a": "We work with teenagers (ages 12-18) and adult learners. Our courses are carefully adapted to each age group, ensuring appropriate pacing, content, and teaching methods."
+          },
+          {
+            "q": "Do you offer conversational / speaking-focused classes?",
+            "a": "From B1 level and above, General English courses are taught in collaboration with a native-speaker teacher, who focuses primarily on speaking and listening skills. This approach allows students to develop natural fluency, pronunciation, and real-life communication.\n\nThe collaboration between Georgian and native-speaker teachers ensures that all language skills - speaking, listening, reading, and writing - are developed in a balanced and academically sound way, with careful attention to accuracy, clarity, and practical use.\n\nGeorgian classes are designed to help foreigners living in Georgia integrate more easily into the local community. Alongside a strong focus on speaking and everyday communication, students also learn the basics of Georgian grammar, ensuring a comprehensive and well-structured learning experience."
+          },
+          {
+            "q": "How do I know which level is right for me? Do you offer placement tests?",
+            "a": "We use a placement test to determine which level is most suitable for each learner based on their current knowledge and skills. We also remain flexible - if the assigned level later turns out to be too easy or too challenging, we can adjust the placement to ensure the best possible learning experience."
+          }
+        ]
+      },
+      "fees": {
+        "title": "Fees & Payments",
+        "questions": [
+          {
+            "q": "How much do courses cost?",
+            "a": "Course prices are available on the individual course pages. All courses are organized into 8/12-class periods."
+          },
+          {
+            "q": "What payment methods do you accept?",
+            "a": "Payments are made at the beginning of each 8/12-class period. Specific payment methods are communicated during registration."
+          },
+          {
+            "q": "Are textbooks included in the price?",
+            "a": "No. Textbooks are not included in the course price and are purchased separately by students."
+          }
+        ]
+      },
+      "policies": {
+        "title": "Rules & Policies",
+        "questions": [
+          {
+            "q": "What is your attendance policy?",
+            "a": "By enrolling, students commit to the 8/12-class period they have paid for. This structure ensures clarity and fairness for both students and teachers."
+          },
+          {
+            "q": "Can missed lessons be rescheduled?",
+            "a": "Missed classes on the student's side are considered conducted and cannot be rescheduled."
+          },
+          {
+            "q": "What happens if a class is canceled?",
+            "a": "If a class is canceled by the teacher or the center, it will be rescheduled or reimbursed."
+          },
+          {
+            "q": "What is your cancellation policy?",
+            "a": "Individual lessons cannot be rescheduled once the class schedule has been agreed upon. However, if the majority of a group requests a change, the overall class time may be adjusted.\n\nThe 8/12-class payment structure ensures that students are not financially bound beyond the current period in case their plans change."
+          }
+        ]
+      }
+    }
   },
   "footer": {
     "tagline": "Where leisure becomes great deeds",

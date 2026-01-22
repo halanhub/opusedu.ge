@@ -7,6 +7,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { MapPin, Phone, Mail, CheckCircle2 } from 'lucide-react';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 const ContactForm = () => {
   const { t } = useTranslation();
@@ -113,6 +114,22 @@ const ContactForm = () => {
                     <p className="text-sm text-muted-foreground">{t('contact.info.email')}</p>
                   </div>
                 </div>
+              </CardContent>
+            </Card>
+
+            {/* Location FAQ */}
+            <Card>
+              <CardContent className="p-0">
+                <Accordion type="single" collapsible>
+                  <AccordionItem value="location" className="border-0">
+                    <AccordionTrigger className="px-6 py-4 hover:text-accent">
+                      {t('contact.location.question')}
+                    </AccordionTrigger>
+                    <AccordionContent className="px-6 pb-4 text-muted-foreground whitespace-pre-line">
+                      {t('contact.location.answer')}
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
               </CardContent>
             </Card>
 
