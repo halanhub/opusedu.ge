@@ -1,2 +1,2 @@
 /*
-  Content-Security-Policy: frame-ancestors https://hampuslang.com https://*.hampuslang.com;
+  Content-Security-Policy: frame-ancestors https://hampuslang.com;
